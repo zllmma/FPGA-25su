@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1a/Constants_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1a/VideoTimingGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VideoTimingGen'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1a/tb_VideoTimingGen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_VideoTimingGen'

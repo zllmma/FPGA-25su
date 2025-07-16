@@ -1,0 +1,1 @@
+-wto "cf39a950f2b94cc7a71dec29006afcb1" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_VideoTimingGen_behav" "xil_defaultlib.tb_VideoTimingGen" -log "elaborate.log" 

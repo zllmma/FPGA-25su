@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../src/lab6Mod1a/Constants_pack.vhd" \
+"../../../../../../src/lab6Mod1a/VideoTimingGen.vhd" \
+"../../../../../../src/lab6Mod1a/tb_VideoTimingGen.vhd" \
+
+# Do not sort compile order
+nosort
