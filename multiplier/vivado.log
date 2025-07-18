@@ -1,0 +1,157 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 18 14:04:58 2025
+# Process ID: 9648
+# Current directory: C:/Users/ZLL/Desktop/fpga-24su/multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12876 C:\Users\ZLL\Desktop\fpga-24su\multiplier\multiplier.xpr
+# Log file: C:/Users/ZLL/Desktop/fpga-24su/multiplier/vivado.log
+# Journal file: C:/Users/ZLL/Desktop/fpga-24su/multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZLL/Desktop/fpga-24su/multiplier/multiplier.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 829.047 ; gain = 130.984
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ZLL/Desktop/fpga-24su/multiplier/multiplier.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Ilaunch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ZLL/Desktop/fpga-24su/divider/divider.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/ZLL/Desktop/fpga-24su/divider/divider.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'divider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ZLL/Desktop/fpga-24su/divider/divider.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj divider_tb_vlog.prj"
+"xvhdl --incr --relax -prj divider_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ZLL/Desktop/fpga-24su/divider/divider.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1d3951dc83f349569a77dfc5be7b2f44 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L floating_point_v7_0_15 -L xbip_dsp48_mult_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L div_gen_v5_1_14 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot divider_tb_behav xil_defaultlib.divider_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ZLL/Desktop/fpga-24su/divider/divider.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "divider_tb_behav -key {Behavioral:sim_1:Functional:divider_tb} -tclbatch {divider_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source divider_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+Phase 1 Complete: Generated results/inputdata.txt
+Phase 2 Complete: Simulation finished.
+$finish called at time : 22045 ns : File "C:/Users/ZLL/Desktop/fpga-24su/divider/divider.srcs/sim_1/new/tb_divider.v" Line 89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'divider_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 924.766 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 18 14:16:48 2025...
+27: a= 65, b=216, c=14040
+Test          28: a=120, b=137, c=16440
+Test          29: a=235, b=182, c=42770
+Test          30: a=198, b=174, c=34452
+Test          31: a=188, b= 42, c= 7896
+Test          32: a= 11, b=113, c= 1243
+Test          33: a=133, b= 79, c=10507
+Test          34: a= 59, b= 58, c= 3422
+Test          35: a=126, b= 21, c= 2646
+Test          36: a=241, b=217, c=52297
+Test          37: a= 98, b= 76, c= 7448
+Test          38: a=159, b=143, c=22737
+Test          39: a=248, b=183, c=45384
+Test          40: a=159, b= 92, c=14628
+Test          41: a= 91, b=137, c=12467
+Test          42: a= 73, b=208, c=15184
+Test          43: a=215, b= 81, c=17415
+Test          44: a=150, b= 12, c= 1800
+Test          45: a=194, b=200, c=38800
+Test          46: a=119, b= 61, c= 7259
+Test          47: a= 18, b=126, c= 2268
+Test          48: a=109, b= 57, c= 6213
+Test          49: a= 31, b=211, c= 6541
+Test          50: a=133, b=120, c=15960
+Test          51: a= 91, b= 73, c= 6643
+Test          52: a= 63, b= 42, c= 2646
+Test          53: a= 88, b=134, c=11792
+Test          54: a=142, b=156, c=22152
+Test          55: a=250, b= 38, c= 9500
+Test          56: a=115, b=163, c=18745
+Test          57: a= 47, b=179, c= 8413
+Test          58: a= 95, b= 68, c= 6460
+Test          59: a=247, b=203, c=50141
+Test          60: a=230, b= 90, c=20700
+Test          61: a= 41, b=237, c= 9717
+Test          62: a=218, b=101, c=22018
+Test          63: a=181, b=223, c=40363
+Test          64: a=121, b= 68, c= 8228
+Test          65: a=208, b= 42, c= 8736
+Test          66: a=171, b= 14, c= 2394
+Test          67: a=220, b=154, c=33880
+Test          68: a=253, b=195, c=49335
+Test          69: a= 86, b= 78, c= 6708
+Test          70: a=103, b= 10, c= 1030
+Test          71: a=182, b= 56, c=10192
+Test          72: a=121, b=184, c=22264
+Test          73: a=148, b=147, c=21756
+Test          74: a=  4, b= 89, c=  356
+Test          75: a=219, b= 77, c=16863
+Test          76: a=217, b=109, c=23653
+Test          77: a=118, b=202, c=23836
+Test          78: a=182, b=149, c=27118
+Test          79: a= 70, b=  4, c=  280
+Test          80: a=247, b=105, c=25935
+Test          81: a=180, b=136, c=24480
+Test          82: a= 40, b= 45, c= 1800
+Test          83: a=199, b= 46, c= 9154
+Test          84: a=  8, b= 28, c=  224
+Test          85: a=253, b= 41, c=10373
+Test          86: a= 28, b=134, c= 3752
+Test          87: a=218, b= 61, c=13298
+Test          88: a=102, b=112, c=11424
+Test          89: a=115, b=186, c=21390
+Test          90: a= 94, b=250, c=23500
+Test          91: a=213, b= 26, c= 5538
+Test          92: a=185, b= 55, c=10175
+Test          93: a=150, b=192, c=28800
+Test          94: a= 38, b=182, c= 6916
+Test          95: a=125, b=220, c=27500
+Test          96: a=134, b=120, c=16080
+Test          97: a=126, b=219, c=27594
+Test          98: a=207, b=121, c=25047
+Test          99: a=250, b= 97, c=24250
+Test         100: a= 23, b=161, c= 3703
+Simulation finished. Data written to results.txt.
+$finish called at time : 1 us : File "C:/Users/ZLL/Desktop/fpga-24su/multiplier/multiplier.srcs/sim_1/new/multiplier_tb.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'multiplier_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 896.102 ; gain = 15.262

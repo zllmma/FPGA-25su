@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 18 14:04:58 2025
+# Process ID: 9648
+# Current directory: C:/Users/ZLL/Desktop/fpga-24su/multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12876 C:\Users\ZLL\Desktop\fpga-24su\multiplier\multiplier.xpr
+# Log file: C:/Users/ZLL/Desktop/fpga-24su/multiplier/vivado.log
+# Journal file: C:/Users/ZLL/Desktop/fpga-24su/multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZLL/Desktop/fpga-24su/multiplier/multiplier.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source multiplier_tb.tcl
+sktop/fpga-24su/divider/divider.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source divider_tb.tcl
+close_sim

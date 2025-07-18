@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 18 11:27:14 2025
+# Process ID: 24180
+# Current directory: C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19892 C:\Users\ZLL\Desktop\fpga-24su\lab6Mod1\lab6Mod1.xpr
+# Log file: C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/vivado.log
+# Journal file: C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1/tb_VideoTimingGen.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1/tb_VideoTimingGen.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1/VideoTimingGen.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1/VideoTimingGen.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1/Constants_pack.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/ZLL/Desktop/fpga-24su/src/lab6Mod1/Constants_pack.vhd
+file mkdir C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sources_1/new
+close [ open C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sources_1/new/VideoTimingGen.vhd w ]
+add_files C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sources_1/new/VideoTimingGen.vhd
+close [ open C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sources_1/new/Constants_pack.vhd w ]
+add_files C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sources_1/new/Constants_pack.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sim_1/new/tb_VideoTimingGen.vhd w ]
+add_files -fileset sim_1 C:/Users/ZLL/Desktop/fpga-24su/lab6Mod1/lab6Mod1.srcs/sim_1/new/tb_VideoTimingGen.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_VideoTimingGen.tcl
+close_sim

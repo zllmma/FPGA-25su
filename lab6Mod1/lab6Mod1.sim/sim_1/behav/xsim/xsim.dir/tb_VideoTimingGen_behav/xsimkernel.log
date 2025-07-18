@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_VideoTimingGen_behav/xsimk.exe -simmode gui -wdb tb_VideoTimingGen_behav.wdb -simrunnum 0 -socket 5705
+Running: xsim.dir/tb_VideoTimingGen_behav/xsimk.exe -simmode gui -wdb tb_VideoTimingGen_behav.wdb -simrunnum 0 -socket 14325
 Design successfully loaded
-Design Loading Memory Usage: 8528 KB (Peak: 8528 KB)
-Design Loading CPU Usage: 31 ms
+Design Loading Memory Usage: 7876 KB (Peak: 7876 KB)
+Design Loading CPU Usage: 30 ms
 Simulation completed
-Simulation Memory Usage: 17196 KB (Peak: 17196 KB)
-Simulation CPU Usage: 593 ms
+Simulation Memory Usage: 16568 KB (Peak: 16568 KB)
+Simulation CPU Usage: 577 ms

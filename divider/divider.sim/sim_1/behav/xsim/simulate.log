@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Phase 1 Complete: Generated results/inputdata.txt
+Phase 2 Complete: Simulation finished.
+$finish called at time : 22045 ns : File "C:/Users/ZLL/Desktop/fpga-24su/divider/divider.srcs/sim_1/new/tb_divider.v" Line 89
